@@ -22,7 +22,14 @@ public class CurrentTrashCount : MonoBehaviour
 
         if (trashCount == 0)
         {
-            sceneController.ChangeScene(nextScene);
+            if (nextScene == 0)
+            {
+                SceneController.HasWon = true;
+            }
+            else
+            {
+                sceneController.ChangeScene(nextScene);
+            }
         }
     }
 

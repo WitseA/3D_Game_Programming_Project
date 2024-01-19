@@ -17,4 +17,9 @@ public class ButtonClick : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
+
+    public void OnMenuButtonClicked()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
