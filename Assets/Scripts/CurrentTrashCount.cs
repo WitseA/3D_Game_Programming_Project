@@ -7,24 +7,28 @@ public class CurrentTrashCount : MonoBehaviour
 {
     public MaxTrashCountInitialization countInitialization;
     public SceneController sceneController;
+    public TextMeshPro trashCountText;
     public int nextScene = 0;
-    private int trashCount = 0;
-    //public TextMeshPro trashCountText;
+    private int trashCount;
 
-    // Update is called once per frame
+    void Start()
+    {
+        trashCount = countInitialization.GetMaxTrashCount();
+    }
+
     void Update()
     {
-        //trashCountText.text = trashCount.ToString();
+        trashCountText.text = trashCount.ToString();
 
-        if (trashCount == countInitialization.GetMaxTrashCount())
+        if (trashCount == 0)
         {
             sceneController.ChangeScene(nextScene);
         }
     }
 
-    public void AddToTrashCount()
+    public void SubstractFromMaxTrashCount()
     {
-        trashCount++;
+        trashCount--;
     }
 
 }

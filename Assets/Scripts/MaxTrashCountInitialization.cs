@@ -5,18 +5,14 @@ using UnityEngine;
 
 public class MaxTrashCountInitialization : MonoBehaviour
 {
-    public string targetTag = "Trash";
-    public int maxTrashCount;
-    //public TextMeshPro maxTrashCountText;
+    private string targetTag = "Trash";
+    private int maxTrashCount;
     
-    // Start is called before the first frame update
     void Start()
     {
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(targetTag);
 
         maxTrashCount = objectsWithTag.Length;
-
-        //maxTrashCountText.text = "  /  " + maxTrashCount;
     }
 
 

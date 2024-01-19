@@ -11,7 +11,7 @@ public class TrashPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            trashCountController.AddToTrashCount();
+            trashCountController.SubstractFromMaxTrashCount();
             Destroy(gameObject);
         }
     }
