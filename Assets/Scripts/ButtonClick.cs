@@ -12,6 +12,11 @@ public class ButtonClick : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void OnInfoButtonClicked()
+    {
+        SceneManager.LoadScene("InfoScene");
+    }
+
     public void OnQuitButtonClicked()
     {
         UnityEditor.EditorApplication.isPlaying = false;
