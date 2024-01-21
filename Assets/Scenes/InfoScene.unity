@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: ab7d1998c8713d740ba9720bfba9b1d6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.04601429, g: 0.02736214, b: 0.030809384, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -262,14 +262,14 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 1701692861}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
+  m_UpdateRectTransformForStandalone: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -463,8 +463,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -167, y: 11.719}
-  m_SizeDelta: {x: 760.212, y: 361.44}
+  m_AnchoredPosition: {x: -62.17, y: -60}
+  m_SizeDelta: {x: 779.86, y: 361.44}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415422213
 MonoBehaviour:
@@ -486,17 +486,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Embark on a thrilling journey to transform our city into a cleaner, greener
-    haven. As a dedicated environmental steward, your mission is to pick up trash
-    across the city.
+  m_text: 'Your spaceship has crashed on this deserted space city.
+
+    To be able
+    to repair your spaceship you need to pick up trash around the city.
+
+    You
+    will go through various obstacles and challenges to make sure you are ready
+
+    to
+    go on and find more treasures and maybe even lost civilizations;
 
 
-    As you pick up the trash you gain points.
-
-
-    The game
-    provides with enough challenges through different parkour levels to make it a
-    fun and challenging experience for YOU.'
+    As you
+    pick up the trash you gain points.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -523,8 +526,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 300
-  m_fontSizeBase: 300
+  m_fontSize: 250
+  m_fontSizeBase: 250
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -764,7 +767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -184}
+  m_AnchoredPosition: {x: 27, y: -190}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1613320332
@@ -941,7 +944,7 @@ Camera:
   m_GameObject: {fileID: 1701692859}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.12175151, g: 0.13423418, b: 0.4528302, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -991,13 +994,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701692859}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.47309023, y: 0.6895836, z: -0.28016478, w: -0.4713468}
+  m_LocalPosition: {x: 1.37, y: 0.35, z: -10.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -3.416, y: -473.54, z: 66.666}
 --- !u!114 &1701692863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1076,7 +1079,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116, y: 240}
+  m_AnchoredPosition: {x: 90, y: 174}
   m_SizeDelta: {x: 756.189, y: 76.874}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975446517
