@@ -11,6 +11,8 @@ public class FirstPersonMovement : MonoBehaviour
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
 
+    static public bool inDialogue = false;
+
     Rigidbody rigidbody;
 
     public GroundCheck groundCheck;
@@ -27,6 +29,14 @@ public class FirstPersonMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Dont move if in dialogue with NPC
+        if (!inDialogue)
+        {
+            Move();
+        }
+    }
+    void Move()
+    {
         // Update IsRunning from input.
         IsRunning = canRun && Input.GetKey(runningKey);
 
@@ -38,7 +48,7 @@ public class FirstPersonMovement : MonoBehaviour
         }
 
         // Get targetVelocity from input.
-        Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+        Vector2 targetVelocity = new Vector2(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
