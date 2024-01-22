@@ -7,7 +7,7 @@ public class BenchAnimationController : MonoBehaviour
 
     public Animator animator;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
