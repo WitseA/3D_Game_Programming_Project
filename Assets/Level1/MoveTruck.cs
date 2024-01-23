@@ -24,7 +24,6 @@ public class MoveTruck : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(playerTag))
         {
-            Debug.Log("Player collided with the platform");
             truckAnimator.SetBool("Move", true);
         }
     }
@@ -33,15 +32,12 @@ public class MoveTruck : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(playerTag))
         {
-            // Handle exit of collision with player
-            Debug.Log("Player exited the platform");
             truckAnimator.SetBool("Move", false);
         }
     }
 
     private void UpdatePlayerPosition()
     {
-        Debug.Log(truckAnimator.GetBool("move"));
         if (playerCollider != null && truckAnimator.GetBool("Move"))
         {
             Debug.Log("move player");
