@@ -27,14 +27,30 @@ public class NewDialogue : MonoBehaviour
         {
             switch (item.Key.WhatNPC)
             {
-                case 1:
+                case 1: //tanee
+                    item.Value.Add("Approximately one-third of all food produced worldwide for human consumption is wasted");
+                    item.Value.Add("leading to significant environmental impacts");
+                    break;
+                case 2: //tanee
+                    item.Value.Add("The fashion industry is responsible for 10% of global CO2 emissions");
+                    item.Value.Add("It is one of the largest polluters of freshwater");
+                    break;
+                case 3: //tanee
+                    item.Value.Add("Solar panels have a short 'energy payback time' of 1-2 years");
+                    item.Value.Add("and subsequently generate more energy than the production process consumes");
+                    break;
+                case 4: //tanee
+                    item.Value.Add("Burning wood in stoves can contribute to air pollution");
+                    item.Value.Add("Efficient technologies and sustainable fuels are necessary to mitigate environmental impacts");
+                    break;
+                case 5: //witse
                     item.Value.Add("I need your help...");
                     item.Value.Add("Our planet has been massively polluted for the last 100000 years,");
                     item.Value.Add("we desperately need help cleaning it up.");
                     item.Value.Add("Are you up for it?");
                     item.Value.Add("Some stuff may be, let's say, a struggle to get to...");
                     break;
-                case 2:
+                case 6: //witse
                     item.Value.Add("I heard this jumppad sends you up way high! I'm too scared to try myself though...");
                     item.Value.Add("Maybe you should give it a try?");
                     break;
