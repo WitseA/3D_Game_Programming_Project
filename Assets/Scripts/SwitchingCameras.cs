@@ -8,10 +8,7 @@ public class SwitchingCameras : MonoBehaviour
     public Camera firstPersonCam;
     public Camera thirdPersonCam;
     public Canvas hudCanvas;
-<<<<<<< HEAD
     public Canvas dialogueCanvas;
-=======
->>>>>>> arno
     public string cameraSwitchKey = "g";
     public TextMeshPro switchCameraText;
 
@@ -22,10 +19,7 @@ public class SwitchingCameras : MonoBehaviour
         thirdPersonCam.enabled = false;
 
         hudCanvas.worldCamera = firstPersonCam;
-<<<<<<< HEAD
         dialogueCanvas.worldCamera = firstPersonCam;
-=======
->>>>>>> arno
 
         switchCameraText.text = cameraSwitchKey + ": switch camera";
     }
@@ -51,10 +45,7 @@ public class SwitchingCameras : MonoBehaviour
     {
         // Set the canvas to use the currently active camera
         hudCanvas.worldCamera = firstPersonCam.enabled ? firstPersonCam : thirdPersonCam;
-<<<<<<< HEAD
         dialogueCanvas.worldCamera = firstPersonCam.enabled ? firstPersonCam : thirdPersonCam;
-=======
->>>>>>> arno
     }
 
     KeyCode GetKeyCodeFromString()
