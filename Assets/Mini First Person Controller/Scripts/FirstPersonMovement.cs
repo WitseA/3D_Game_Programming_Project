@@ -41,10 +41,7 @@ public class FirstPersonMovement : MonoBehaviour
             rigidbody.constraints = RigidbodyConstraints.None;
             Move();
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
         else if (groundCheck.isGrounded && NewDialogue.InDialog)
         {
             rigidbody.constraints = RigidbodyConstraints.FreezeAll;
