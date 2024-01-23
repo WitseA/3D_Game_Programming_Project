@@ -25,7 +25,7 @@ public class SwitchingCameras : MonoBehaviour
         dialogueCanvas.worldCamera = firstPersonCam;
 
 
-        switchCameraText.text = cameraSwitchKey + ": switch camera";
+        switchCameraText.text = cameraSwitchKey + ": switch camera\nf: talk to npc's";
     }
 
     // Update is called once per frame

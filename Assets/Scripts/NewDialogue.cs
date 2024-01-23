@@ -27,32 +27,60 @@ public class NewDialogue : MonoBehaviour
         {
             switch (item.Key.WhatNPC)
             {
-                case 1: //tanee
+                // tanee 1-4
+                // tutorial 5
+                // witse 6-9
+                // wout  10-13
+                // arno  14-17
+
+                case 1:
                     item.Value.Add("Approximately one-third of all food produced worldwide for human consumption is wasted");
                     item.Value.Add("leading to significant environmental impacts");
                     break;
-                case 2: //tanee
+                case 2:
                     item.Value.Add("The fashion industry is responsible for 10% of global CO2 emissions");
                     item.Value.Add("It is one of the largest polluters of freshwater");
                     break;
-                case 3: //tanee
+                case 3:
                     item.Value.Add("Solar panels have a short 'energy payback time' of 1-2 years");
                     item.Value.Add("and subsequently generate more energy than the production process consumes");
                     break;
-                case 4: //tanee
+                case 4:
                     item.Value.Add("Burning wood in stoves can contribute to air pollution");
                     item.Value.Add("Efficient technologies and sustainable fuels are necessary to mitigate environmental impacts");
                     break;
-                case 5: //witse
+                case 5:
                     item.Value.Add("I need your help...");
                     item.Value.Add("Our planet has been massively polluted for the last 100000 years,");
                     item.Value.Add("we desperately need help cleaning it up.");
                     item.Value.Add("Are you up for it?");
                     item.Value.Add("Some stuff may be, let's say, a struggle to get to...");
+                    item.Value.Add("How to play!");
+                    item.Value.Add("Move with arrow keys or wasd. Jump with space. Crouch with ctrl. Sprint with shift.");
+                    item.Value.Add("Good luck!");
                     break;
-                case 6: //witse
+                case 6:
                     item.Value.Add("I heard this jumppad sends you up way high! I'm too scared to try myself though...");
                     item.Value.Add("Maybe you should give it a try?");
+                    break;
+                case 14:
+                    item.Value.Add("Cities aim for sustainable transportation systems such as electric public transportation");
+                    item.Value.Add("And the development of walkable neighborhoods to reduce dependence on cars.");
+                    break;
+                case 15:
+                    item.Value.Add("Cities encourage sustainable business practices,");
+                    item.Value.Add("They also support green enterprises to foster a sustainable local economy.");
+                    break;
+                case 16:
+                    item.Value.Add("Promoting local and sustainable food production, such as urban farming and community gardens.");
+                    item.Value.Add("Contributes to food security and reduces the ecological impact of food transportation.");
+                    item.Value.Add("By reducing reliance on long-distance transportation,");
+                    item.Value.Add("Local food production minimizes the carbon footprint associated with the transportation of goods.");
+                    break;
+                case 17:
+                    item.Value.Add("Burning wood can be considered a relatively sustainable and eco-friendly source of energy when managed responsibly.");
+                    item.Value.Add("Wood is a renewable resource");
+                    item.Value.Add("As long as the rate of tree cutting is balanced with replanting and sustainable forestry practices.");
                     break;
                 default:
                     break;

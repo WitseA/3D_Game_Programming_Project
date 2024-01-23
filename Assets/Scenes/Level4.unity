@@ -2211,7 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beeld: {fileID: 854664141}
-  WhatNPC: 0
+  WhatNPC: 17
   playerDetection: 0
   inDialogue: 0
 --- !u!135 &295096806
@@ -4470,7 +4470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beeld: {fileID: 854664141}
-  WhatNPC: 2
+  WhatNPC: 15
   playerDetection: 0
   inDialogue: 0
 --- !u!135 &548421339
@@ -17181,7 +17181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beeld: {fileID: 854664141}
-  WhatNPC: 0
+  WhatNPC: 16
   playerDetection: 0
   inDialogue: 0
 --- !u!135 &1395057619
@@ -21787,7 +21787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   beeld: {fileID: 854664141}
-  WhatNPC: 1
+  WhatNPC: 14
   playerDetection: 0
   inDialogue: 0
 --- !u!135 &1976153668
