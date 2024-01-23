@@ -18,11 +18,18 @@ public class NewDialogue : MonoBehaviour
     {
         // Find the NPCSystem instance in the scene
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
         nPCSystems = FindObjectsOfType<NPCSystem>().ToList();
         foreach (var npcSystem in nPCSystems)
         {
             dictionary.Add(npcSystem, new List<string>());
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
         foreach (var item in dictionary)
         {
             switch (item.Key.WhatNPC)
@@ -63,9 +70,12 @@ public class NewDialogue : MonoBehaviour
                     item.Value.Add("I heard this jumppad sends you up way high! I'm too scared to try myself though...");
                     item.Value.Add("Maybe you should give it a try?");
                     break;
+<<<<<<< HEAD
                 case 7:
                     item.Value.Add("Last piece of trash!!");
                     break;
+=======
+>>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
                 case 14:
                     item.Value.Add("Cities aim for sustainable transportation systems such as electric public transportation");
                     item.Value.Add("And the development of walkable neighborhoods to reduce dependence on cars.");
@@ -89,6 +99,7 @@ public class NewDialogue : MonoBehaviour
                     break;
             }
         }
+<<<<<<< HEAD
 =======
         npcSystem = FindObjectOfType<NPCSystem>();
         dialogues.Add("I need your help...");
@@ -97,10 +108,13 @@ public class NewDialogue : MonoBehaviour
         dialogues.Add("Are you up for it?");
         dialogues.Add("Some stuff may be, let's say, a struggle to get to...");
 >>>>>>> parent of e5a045a (Added start of parkour and made jumppad script + npc.)
+=======
+>>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
     }
 
     void Update()
     {
+<<<<<<< HEAD
         foreach (var item in dictionary)
         {
             var npcSystem = item.Key;
@@ -136,6 +150,43 @@ public class NewDialogue : MonoBehaviour
                     }
                 }
             }
+=======
+            foreach (var item in dictionary)
+            {
+                var npcSystem = item.Key;
+                dialogues = item.Value;
+                if (npcSystem != null && npcSystem.inDialogue && dialogues.Count > 0)
+                {
+                    InDialog = true;
+                    TextMeshProUGUI textMeshPro = npcSystem.beeld.GetComponentInChildren<TextMeshProUGUI>();
+                    textMeshPro.text = dialogues[index];
+                    npcSystem.beeld.SetActive(true);
+
+                    if (index < dialogues.Count && Input.GetMouseButtonDown(0))
+                    {
+                        index++;
+
+                        // Update the dialogue text on the canvas
+                        if (textMeshPro != null && index < dialogues.Count && dialogues.Count > 0)
+                        {
+                            textMeshPro.text = dialogues[index];
+                        }
+                        else if (textMeshPro == null)
+                        {
+                            Debug.LogError("TextMeshProUGUI component not found on the dialogue object.");
+                        }
+
+                        if (index >= dialogues.Count)
+                        {
+                        // All dialogues displayed, end dialogue
+                            npcSystem.inDialogue = false;
+                        InDialog = false;
+                            index = 0;
+                            npcSystem.beeld.SetActive(false);
+                        }
+                    }
+                }
+>>>>>>> 608aced572cadfbbd09a608d8813204bb14a0437
         }
     }
 }

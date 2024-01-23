@@ -20,7 +20,8 @@ public class CurrentTrashCount : MonoBehaviour
     {
         trashCountText.text = trashCount.ToString();
 
-        if (trashCount == 0)
+
+        if (trashCount <= 0)
         {
             if (nextScene == 0)
             {
