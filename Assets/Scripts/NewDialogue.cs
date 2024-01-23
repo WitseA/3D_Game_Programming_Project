@@ -27,16 +27,19 @@ public class NewDialogue : MonoBehaviour
         {
             switch (item.Key.WhatNPC)
             {
-                case 6:
+                case 5:
                     item.Value.Add("I need your help...");
                     item.Value.Add("Our planet has been massively polluted for the last 100000 years,");
                     item.Value.Add("we desperately need help cleaning it up.");
                     item.Value.Add("Are you up for it?");
                     item.Value.Add("Some stuff may be, let's say, a struggle to get to...");
                     break;
-                case 7:
+                case 6:
                     item.Value.Add("I heard this jumppad sends you up way high! I'm too scared to try myself though...");
                     item.Value.Add("Maybe you should give it a try?");
+                    break;
+                case 7:
+                    item.Value.Add("Last piece of trash!!");
                     break;
                 default:
                     break;
