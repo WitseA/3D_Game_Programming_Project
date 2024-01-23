@@ -30,12 +30,20 @@ public class FirstPersonMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Dont move if in dialogue with NPC
+<<<<<<< HEAD
         if (!NPCSystem.inDialogue)
+=======
+        if (!NewDialogue.InDialog)
+>>>>>>> witse
         {
             rigidbody.constraints = RigidbodyConstraints.None;
             Move();
         }
+<<<<<<< HEAD
         else if (groundCheck.isGrounded && NPCSystem.inDialogue)
+=======
+        else if (groundCheck.isGrounded && NewDialogue.InDialog)
+>>>>>>> witse
         {
             rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         }

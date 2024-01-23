@@ -5,11 +5,19 @@ using TMPro;
 
 public class NPCSystem : MonoBehaviour
 {
+<<<<<<< HEAD
     public bool playerDetection = false;
     public GameObject beeld;
     public static bool inDialogue { get; set; } = false;
     private int index = 0;
 
+=======
+    public GameObject beeld;
+    public int WhatNPC;
+
+    public bool playerDetection = false;
+    public bool inDialogue = false;
+>>>>>>> witse
     void Start()
     {
         // Set up first line
@@ -20,6 +28,7 @@ public class NPCSystem : MonoBehaviour
     {
         if (playerDetection && Input.GetKeyDown(KeyCode.F) && !inDialogue)
         {
+<<<<<<< HEAD
             
             inDialogue = true;
 
@@ -55,6 +64,12 @@ public class NPCSystem : MonoBehaviour
     //    }
     //}
 
+=======
+            inDialogue = true;
+        }
+    }
+
+>>>>>>> witse
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
