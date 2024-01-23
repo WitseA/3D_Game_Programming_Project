@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &29655669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -154,6 +154,7 @@ RectTransform:
   - {fileID: 1715067568}
   - {fileID: 1588584366}
   - {fileID: 399654913}
+  - {fileID: 247423445}
   m_Father: {fileID: 1659576713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -309,7 +310,7 @@ GameObject:
   - component: {fileID: 247423447}
   - component: {fileID: 247423446}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: Instructions (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -324,15 +325,15 @@ RectTransform:
   m_GameObject: {fileID: 247423444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.98586017, y: 0.98586017, z: 0.98586017}
+  m_LocalScale: {x: 0.9858603, y: 0.9858603, z: 0.9858603}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1659576713}
+  m_Father: {fileID: 29655669}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.9, y: -347}
-  m_SizeDelta: {x: 1743.4, y: 225.2}
+  m_AnchoredPosition: {x: 700.2, y: -433.8}
+  m_SizeDelta: {x: 332.8, y: 49.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247423446
 MonoBehaviour:
@@ -363,8 +364,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286479998
+  m_fontColor: {r: 0.4943396, g: 0.4943396, b: 0.4943396, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -381,13 +382,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 2
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4218,7 +4219,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 29655669}
-  - {fileID: 247423445}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
