@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ffbbd398a3746274da2ab3e6ed359046
+=======
+guid: 99c9720ab356a0642a771bea13969a05
+>>>>>>> parent of e5a045a (Added start of parkour and made jumppad script + npc.)
 DefaultImporter:
   externalObjects: {}
   userData: 

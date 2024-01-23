@@ -17,6 +17,7 @@ public class NewDialogue : MonoBehaviour
     void Start()
     {
         // Find the NPCSystem instance in the scene
+<<<<<<< HEAD
         nPCSystems = FindObjectsOfType<NPCSystem>().ToList();
         foreach (var npcSystem in nPCSystems)
         {
@@ -88,6 +89,14 @@ public class NewDialogue : MonoBehaviour
                     break;
             }
         }
+=======
+        npcSystem = FindObjectOfType<NPCSystem>();
+        dialogues.Add("I need your help...");
+        dialogues.Add("Our planet has been massively polluted for the last 100000 years,");
+        dialogues.Add("we desperately need help cleaning it up.");
+        dialogues.Add("Are you up for it?");
+        dialogues.Add("Some stuff may be, let's say, a struggle to get to...");
+>>>>>>> parent of e5a045a (Added start of parkour and made jumppad script + npc.)
     }
 
     void Update()

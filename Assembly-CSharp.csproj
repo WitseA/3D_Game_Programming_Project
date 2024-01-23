@@ -67,7 +67,11 @@
     <Compile Include="Assets\Scripts\TrashPickup.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\SwitchingCameras.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Portal.cs" />
+=======
+    <Compile Include="Assets\epyphany\demo\ressources\move.cs" />
+>>>>>>> parent of e5a045a (Added start of parkour and made jumppad script + npc.)
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
