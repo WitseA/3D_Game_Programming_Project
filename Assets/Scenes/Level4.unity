@@ -2117,8 +2117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e034dbab4e455f4894b344b9f775fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDetection: 0
   beeld: {fileID: 854664141}
+  WhatNPC: 0
+  playerDetection: 0
+  inDialogue: 0
 --- !u!135 &295096806
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2138,7 +2140,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.26
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &295096807
 MeshRenderer:
@@ -3650,8 +3652,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4374,8 +4376,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e034dbab4e455f4894b344b9f775fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDetection: 0
   beeld: {fileID: 854664141}
+  WhatNPC: 2
+  playerDetection: 0
+  inDialogue: 0
 --- !u!135 &548421339
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4395,7 +4399,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.26
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &548421340
 MeshRenderer:
@@ -10502,7 +10506,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: a3853f3aff4730243926cb3e3f920f32,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.61
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a3853f3aff4730243926cb3e3f920f32,
         type: 3}
@@ -16990,8 +16994,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e034dbab4e455f4894b344b9f775fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDetection: 0
   beeld: {fileID: 854664141}
+  WhatNPC: 0
+  playerDetection: 0
+  inDialogue: 0
 --- !u!135 &1395057619
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17011,7 +17017,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.26
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1395057620
 MeshRenderer:
@@ -21501,8 +21507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e034dbab4e455f4894b344b9f775fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDetection: 0
   beeld: {fileID: 854664141}
+  WhatNPC: 1
+  playerDetection: 0
+  inDialogue: 0
 --- !u!135 &1976153668
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21522,7 +21530,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.26
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1976153669
 MeshRenderer:
@@ -22650,7 +22658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.56
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
