@@ -9,7 +9,7 @@ public class NPCSystem : MonoBehaviour
     public int WhatNPC;
 
     public bool playerDetection = false;
-    public static bool inDialogue { get; set; } = false;
+    public bool inDialogue = false;
     void Start()
     {
         // Set up first line
