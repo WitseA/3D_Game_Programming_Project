@@ -5,11 +5,11 @@ using TMPro;
 
 public class NPCSystem : MonoBehaviour
 {
-    public bool playerDetection = false;
     public GameObject beeld;
-    public static bool inDialogue { get; set; } = false;
-    private int index = 0;
+    public int WhatNPC;
 
+    public bool playerDetection = false;
+    public static bool inDialogue { get; set; } = false;
     void Start()
     {
         // Set up first line

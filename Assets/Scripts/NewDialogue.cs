@@ -13,11 +13,22 @@ public class NewDialogue : MonoBehaviour
     {
         // Find the NPCSystem instance in the scene
         npcSystem = FindObjectOfType<NPCSystem>();
-        dialogues.Add("I need your help...");
-        dialogues.Add("Our planet has been massively polluted for the last 100000 years,");
-        dialogues.Add("we desperately need help cleaning it up.");
-        dialogues.Add("Are you up for it?");
-        dialogues.Add("Some stuff may be, let's say, a struggle to get to...");
+        switch (npcSystem.WhatNPC)
+        {
+            case 1:
+                dialogues.Add("I need your help...");
+                dialogues.Add("Our planet has been massively polluted for the last 100000 years,");
+                dialogues.Add("we desperately need help cleaning it up.");
+                dialogues.Add("Are you up for it?");
+                dialogues.Add("Some stuff may be, let's say, a struggle to get to...");
+                break;
+            case 2:
+                dialogues.Add("I heard this jumppad sends you up way high! I'm too scared to try myself though...");
+                dialogues.Add("Maybe you should give it a try?");
+                break;
+            default:
+                break;
+        }
     }
 
     void Update()
