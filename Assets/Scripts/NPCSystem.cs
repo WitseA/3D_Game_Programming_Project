@@ -6,34 +6,66 @@ using TMPro;
 public class NPCSystem : MonoBehaviour
 {
     public bool playerDetection = false;
-    public GameObject dialogueTemplate;
     public GameObject beeld;
+    public static bool inDialogue { get; set; } = false;
+    public List<string> dialogues { get; private set; } = new List<string>();
+    private int index = 0;
+
+    void Start()
+    {
+        // Set up dialogues
+        dialogues.Add("This is the first line of dialogue.");
+        dialogues.Add("Here's the second line.");
+        dialogues.Add("And the third line.");
+    }
+
     void Update()
     {
-        if(playerDetection && Input.GetKeyDown(KeyCode.F) && !FirstPersonMovement.inDialogue)
+        if (playerDetection && Input.GetKeyDown(KeyCode.F) && !inDialogue)
         {
             beeld.SetActive(true);
-            FirstPersonMovement.inDialogue = true;
-            NewDialogue("werkt");
-            NewDialogue("zeker");
-            NewDialogue("werkt");
-            NewDialogue("VAMOOOOOOOOOOOS");
-            beeld.transform.GetChild(1).gameObject.SetActive(true);
+            inDialogue = true;
+
+            // Start the dialogue sequence
+            //ShowNextDialogue();
         }
     }
-    private void NewDialogue(string txt)
+
+    private void ShowNextDialogue()
     {
-        GameObject templateClone = Instantiate(dialogueTemplate, dialogueTemplate.transform);
-        templateClone.transform.parent = beeld.transform;
-        templateClone.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = txt;
+        if (index < dialogues.Count)
+        {
+            // Update the dialogue text on the canvas
+            TextMeshProUGUI textMeshPro = beeld.GetComponentInChildren<TextMeshProUGUI>();
+            if (textMeshPro != null)
+            {
+                textMeshPro.text = dialogues[index];
+            }
+            else
+            {
+                Debug.LogError("TextMeshProUGUI component not found on the dialogue object.");
+            }
+
+            index += 1;
+            print(index + " en " + dialogues.Count);
+            if (index > dialogues.Count)
+            {
+                // All dialogues displayed, end dialogue
+                inDialogue = false;
+                index = 0;
+                beeld.SetActive(false);
+            }
+        }
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             playerDetection = true;
         }
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")

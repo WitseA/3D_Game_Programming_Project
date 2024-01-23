@@ -11,7 +11,6 @@ public class FirstPersonMovement : MonoBehaviour
     public float runSpeed = 9;
     public KeyCode runningKey = KeyCode.LeftShift;
 
-    static public bool inDialogue = false;
 
     Rigidbody rigidbody;
 
@@ -25,14 +24,20 @@ public class FirstPersonMovement : MonoBehaviour
     {
         // Get the rigidbody on this.
         rigidbody = GetComponent<Rigidbody>();
+        groundCheck = GetComponentInChildren<GroundCheck>();
     }
 
     void FixedUpdate()
     {
         // Dont move if in dialogue with NPC
-        if (!inDialogue)
+        if (!NPCSystem.inDialogue)
         {
+            rigidbody.constraints = RigidbodyConstraints.None;
             Move();
+        }
+        else if (groundCheck.isGrounded && NPCSystem.inDialogue)
+        {
+            rigidbody.constraints = RigidbodyConstraints.FreezeAll;
         }
     }
     void Move()
