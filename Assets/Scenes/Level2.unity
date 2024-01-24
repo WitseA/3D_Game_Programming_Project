@@ -11026,7 +11026,7 @@ MonoBehaviour:
   countInitialization: {fileID: 1476576012}
   sceneController: {fileID: 1095374862}
   trashCountText: {fileID: 1109131042}
-  nextScene: 0
+  nextScene: 3
 --- !u!1 &1478183869 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 663651724208436000, guid: ef4488d9e77445146953e3e73ec67653,
