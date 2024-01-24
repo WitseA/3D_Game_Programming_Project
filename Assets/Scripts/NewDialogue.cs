@@ -65,6 +65,30 @@ public class NewDialogue : MonoBehaviour
                 case 7:
                     item.Value.Add("Last piece of trash!!");
                     break;
+                case 10:
+                    item.Value.Add("Per persoon produceren we meer dan 500 kilo afval per jaar");
+                    item.Value.Add("Volgens het CBS ? is dit aantal zelfs 550 kilo per persoon per jaar.");
+                    item.Value.Add("Maar volgens Milieu Centraal is hier 80% van te scheiden.");
+                    item.Value.Add("Echter ligt dit percentage momenteel 25% lager.");
+                    item.Value.Add("Zo blijkt maar weer, dat we per persoon genoeg afval hebben om te kunnen scheiden!");
+                    break;
+                case 11:
+                    item.Value.Add("Afval scheiden kost veel tijd");
+                    item.Value.Add("Nee, dit is een fabel.");
+                    item.Value.Add("Het opstarten van het gescheiden inzamelen en onderzoeken welke afvalstromen gescheiden kunnen worden, kost inderdaad tijd.");
+                    item.Value.Add("Maar als het proces eenmaal loopt, hoef je weinig aandacht meer te schenken aan het scheiden van afval.");
+                    break;
+                case 12:
+                    item.Value.Add("Duurzaamheid kan ook geld besparen");
+                    item.Value.Add("Duurzaamheid hoeft niet altijd duur te zijn.");
+                    item.Value.Add("Sterker nog, duurzaamheid kan ook geld besparen.");
+                    item.Value.Add("Bijvoorbeeld door energiezuinige apparaten te kopen en je huis goed te isoleren, waardoor je minder energie verbruikt en dus minder hoeft te betalen voor je energierekening.");
+                    item.Value.Add("Ook kun je geld besparen door bewuster te consumeren en minder te verspillen.");
+                    break;
+                case 13:
+                    item.Value.Add("Van 1950 tot 2017 is er in totaal 9,2 miljard ton plastic geproduceerd, waarvan slechts 600 miljoen ton is gerecycled.");
+                    item.Value.Add("Dit betekent dat er jaarlijks 300 miljoen ton aan plastic afval wordt teruggegeven aan de aarde.");
+                    break;
                 case 14:
                     item.Value.Add("Cities aim for sustainable transportation systems such as electric public transportation");
                     item.Value.Add("And the development of walkable neighborhoods to reduce dependence on cars.");
